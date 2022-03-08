@@ -8,6 +8,9 @@ export const config: ScullyConfig = {
   projectName: "jackallard.io",
   spsModulePath: 'YOUR OWN MODULE PATH HERE',
   outDir: './dist/static',
+  puppeteerLaunchOptions: {
+    executablePath: 'node_modules/chrome-aws-lambda/bin/chromium.br'
+  },
   routes: {
     '/blog/:slug': {
       type: 'contentFolder',
