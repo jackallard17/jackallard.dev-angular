@@ -9,7 +9,7 @@ export const config: ScullyConfig = {
   spsModulePath: 'YOUR OWN MODULE PATH HERE',
   outDir: './dist/static',
   puppeteerLaunchOptions: {
-    executablePath: 'node_modules/chrome-aws-lambda/bin/chromium.br'
+    executablePath: 'node_modules/puppeteer/.local-chromium/linux-970485/chrome-linux/chrome'
   },
   routes: {
     '/blog/:slug': {
